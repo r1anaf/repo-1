@@ -1,8 +1,8 @@
 /*
- * name: riana fazir and anthony vivona
- * date: 4/17/23
+ * name: riana fazir
  * file name: Picture
  * description: holds methods using 2d arrays and loops to manipulate photos
+ * (part of a bigger project that involved externally written code) my code section starts at line 459.
  */
 
 import java.awt.*;
