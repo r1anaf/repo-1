@@ -14,7 +14,7 @@ public class Arithmetic {
 	
 	public void processInput() {
 		String copy = input;
-		String o = "*/+-()^";
+		String o = "*/+-";
 		while(copy != "") {
 			//Traverse Through String
 			if (o.contains(copy.substring(0,1))) {
@@ -33,7 +33,7 @@ public class Arithmetic {
 	}	
 	
 	public void evaluate(String copy) {
-		String o = "*/+-()^";
+		String o = "*/+-";
 		if(nums.size() >= 2 && !opps.isEmpty()) {
 			if (opps.peek().equals("-")) {
 				if(copy.equals("") || (!copy.substring(0, 1).equals("*") && !copy.substring(0, 1).equals("/"))) {
@@ -86,7 +86,7 @@ public class Arithmetic {
 		one.processInput();
 		System.out.println(one.toString());
 		System.out.println();
-		Arithmetic two = new Arithmetic("1-6/2");
+		Arithmetic two = new Arithmetic("8/4+3");
 		two.processInput();
 		System.out.println(two.toString());
 		System.out.println();
